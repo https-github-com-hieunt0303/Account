@@ -1,0 +1,38 @@
+* {
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    line-height: 2rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --primary-color: #336d51;
+    --category-color: #E6ECE9;
+    --line-color: rgba(51, 109, 81, 0.2);
+    --sub-text-color: #acacac;
+    --text-color: #212B36;
+}
+/* Responsive*/
+.grid{
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid-full-width{
+    width: 100%;
+}
+.grid-row{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: -16px;
+    padding-right: -16px;
+}
