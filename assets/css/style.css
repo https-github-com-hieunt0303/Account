@@ -1,9 +1,9 @@
-.sign-in{
+.account{
 
 }
-.sign-in__body{
+.account__body{
 }
-.sign-in__body-bg{
+.account__body-bg{
     height: 700px;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -11,13 +11,9 @@
     justify-items: center;
     align-items: center;
 }
-.sign-in__body-bg-img{
-    width: 100%;
-    object-fit: cover;
-}
 
 /* Form */
-.sign-in__form{
+.account__form{
     margin: 0 auto;
     width: 564px;
     border-radius: 10px;
@@ -29,15 +25,22 @@
     display: flex;
     justify-items: center;
     flex-direction: column;
+    display: none;
 }
-.sign-in__form-name{
+.sign-up__form-info{
+    padding: 32px 24px;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+.account__form-name{
     margin: 0;
     font-size: 2.8rem;
     font-weight: 500;
     color: var(--text-color);
     padding-bottom: 12px;
 }
-.sign-in__form-input{
+.account__form-input{
     display: block;
     width: 100%;
     padding: 12px 16px;
@@ -48,7 +51,7 @@
     outline: none;
     margin: 24px 0 0;
 }
-.sign-in__form-btn{
+.account__form-btn{
     display: block;
     width: 100%;
     padding: 15px 16px;
@@ -62,10 +65,10 @@
     margin: 32px 0 0;
     cursor: pointer;
 }
-.sign-in__form-btn:hover{
+.account__form-btn:hover{
     background-color: rgba(51, 109, 81, 0.9);
 }
-.sign-in__form-forgot-password{
+.account__form-forgot-password{
     font-size: 1.4rem;
     color: var(--text-color);
     text-decoration: none;
@@ -73,29 +76,32 @@
     margin: 24px auto;
     cursor: pointer;
 }
-.sign-in__form-or{
+.account__form-or{
     width: 100%;
     display: flex;
     justify-items: center;
     margin-top: 16px;
 }
-.sign-in__form-or-line{
+.sign-up__form-info .account__form-or{
+    margin-top: 32px;
+}
+.account__form-or-line{
     flex: 1;
     border-top: 1px solid var(--primary-color);
 }
-.sign-in__form-or-info{
+.account__form-or-info{
     position: relative;
     top: -10px;
     margin: 0 12px;
     font-size: 1.8rem;
     color: var(--text-color);
 }
-.sign-in__form-signin-with{
+.account__form-signin-with{
     display: flex;
     justify-items: center;
     margin-top: 12px;
 }
-.sign-in__form-signin-with-social-media{
+.account__form-signin-with-social-media{
     padding: 10px 0;
     font-size: 1.5rem;
     color: var(--white-color);
@@ -105,38 +111,56 @@
     margin: 0 auto;
     cursor: pointer;
 }
-.sign-in__form-signin-with-social-media:hover{
+.account__form-signin-with-social-media:hover{
     opacity: 0.9;
 }
-.sign-in__form-signin-with-social-media:first-child{
+.account__form-signin-with-social-media:first-child{
     background-color: #3B5998;
 }
-.sign-in__form-signin-with-social-media:last-child{
+.account__form-signin-with-social-media:last-child{
     background-color: #DC4A38
     ;
 }
-.sign-in__form-signin-with-icon{
+.account__form-signin-with-icon{
     margin-right: 8px;
     font-size: 2rem;
 }
-.sign-in__form-signin-name{
+.account__form-signin-name{
 
 }
-.sign-in__form-check-account{
+.account__form-check-account{
     display: flex;
     justify-items: center;
     margin: 48px auto 12px;
 }
-.sign-in__form-check-account-info{
+.account__form-check-account-info{
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--text-color);
 }
-.sign-in__form-check-account-signup-now{
+.account__form-check-account-signup-now{
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--primary-color);
     margin-left: 8px;
     cursor: pointer;
     text-decoration: none;
+}
+.account__form-policy{
+    margin-top: 12px;
+}
+.account__form-policy-info{
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--text-color);
+    margin: 8px 0;
+}
+.account__form-policy-info-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-color);
 }
