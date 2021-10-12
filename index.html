@@ -39,13 +39,13 @@
                             </div>
                             <div class="account__form-check-account">
                                 <span class="account__form-check-account-info">You don’t have an account available?</span>
-                                <a class="account__form-check-account-signup-now">Sign up now</a>
+                                <a class="account__form-check-account-signup-now js-sign-up">Sign up now</a>
                             </div>
                         </div>
                         <div class="sign-up__form-info">
                             <h3 class="account__form-name">Sign up</h3>
                             <input type="text" class="account__form-input" placeholder="Phonenumber">
-                            <button class="account__form-btn">NEXT</button>
+                            <button class="account__form-btn js-confirm">NEXT</button>
                             <div class="account__form-or">
                                 <div class="account__form-or-line"></div>
                                 <span class="account__form-or-info">or</span>
@@ -71,7 +71,7 @@
                             </div>
                             <div class="account__form-check-account">
                                 <span class="account__form-check-account-info">You have an account available?</span>
-                                <a class="account__form-check-account-signup-now">Sign in now</a>
+                                <a class="account__form-check-account-signup-now js-sign-in">Sign in now</a>
                             </div>
                         </div>
                     </div>
@@ -103,5 +103,54 @@
             </div>
         </div>
     </div>
+
+    <script>
+        // Form
+
+        const openSignIn = document.querySelector('.js-sign-in')
+        const openSignUp = document.querySelector('.js-sign-up')
+        const signInForm = document.querySelector('.sign-in__form-info')
+        const signUpForm = document.querySelector('.sign-up__form-info')
+
+        function showSignUpForm(){
+            signUpForm.classList.add('open')
+        }
+        function hideSignInForm(){
+            signInForm.classList.add('close')
+        }
+        function showSignInForm(){
+            signInForm.classList.remove('close')
+        }        
+        function hideSignUpForm(){
+            signUpForm.classList.remove('open')
+        }
+
+        openSignUp.addEventListener('click', showSignUpForm)
+        openSignUp.addEventListener('click', hideSignInForm)
+        openSignIn.addEventListener('click', showSignInForm)
+        openSignIn.addEventListener('click', hideSignUpForm)
+
+
+        // Modal
+        const btnOpen = document.querySelector('.js-confirm')
+        const modal = document.querySelector('.modal__confirm-phone-number')
+        const modalConfirm = document.querySelector('.confirm__phone-number')
+        const btnClose = document.querySelector('.confirm__phone-number-form-icon')
+
+        function showConfirmForm(){
+            modal.classList.add('open')
+        }
+        function hideConfirmForm(){
+            modal.classList.remove('open')
+        }
+
+        btnOpen.addEventListener('click',showConfirmForm)
+        btnClose.addEventListener('click',hideConfirmForm)
+        modal.addEventListener('click', hideConfirmForm)
+        modalConfirm.addEventListener('click', function(event){
+            event.stopPropagation()
+        })
+
+    </script>
 </body>
 </html>

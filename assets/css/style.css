@@ -25,13 +25,18 @@
     display: flex;
     justify-items: center;
     flex-direction: column;
+}
+.sign-in__form-info.close{
     display: none;
 }
 .sign-up__form-info{
     padding: 32px 24px;
-    display: flex;
+    display: none;
     justify-items: center;
     flex-direction: column;
+}
+.sign-up__form-info.open{
+    display: flex;
 }
 .account__form-name{
     margin: 0;
@@ -169,14 +174,16 @@
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    display: flex;
+    display: none;
     justify-items: center;
     align-items: center;
+}
+.modal__confirm-phone-number.open{
+    display: flex;
 }
 .confirm__phone-number{
     margin: 0 auto;
@@ -206,6 +213,9 @@
     font-size: 1.6rem;
     line-height: 1.6rem;
     cursor: pointer;
+}
+.confirm__phone-number-form-icon:hover{
+    color: #DC4A38;
 }
 .confirm__phone-number-form-body{
     margin: 16px 0;
