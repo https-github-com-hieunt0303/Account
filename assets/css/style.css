@@ -4,18 +4,18 @@
 .account__body{
 }
 .account__body-bg{
-    height: 700px;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    width: 100%;
     display: flex;
     justify-items: center;
+    justify-content: center;
     align-items: center;
+    background: url(../img/back-ground.png) top center / cover no-repeat;
 }
 
 /* Form */
 .account__form{
-    margin: 0 auto;
-    width: 564px;
+    width: 546px;
+    margin: 100px auto;
     border-radius: 10px;
     background-color: var(--white-color);
     box-shadow: 0 0 8px rgba(51, 109, 81, .5);
