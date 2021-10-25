@@ -1,21 +1,23 @@
 .account{
 
 }
-.account__body{
-}
 .account__body-bg{
-    width: 100%;
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    background: url(../img/back-ground.png) top center / cover no-repeat;
+    background-image: url(../img/back-ground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 700px;
+    position: relative;
 }
 
 /* Form */
 .account__form{
-    width: 546px;
-    margin: 100px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    /* width: 546px; */
+    /* margin: 100px auto; */
     border-radius: 10px;
     background-color: var(--white-color);
     box-shadow: 0 0 8px rgba(51, 109, 81, .5);
@@ -59,7 +61,7 @@
 .account__form-btn{
     display: block;
     width: 100%;
-    padding: 15px 16px;
+    padding: 15px 0;
     color: var(--white-color);
     font-size: 1.5rem;
     font-weight: 500;
@@ -104,6 +106,7 @@
 .account__form-signin-with{
     display: flex;
     justify-items: center;
+    justify-content: center;
     margin-top: 12px;
 }
 .account__form-signin-with-social-media{
@@ -113,7 +116,7 @@
     border-radius: 3px;
     min-width: 220px;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 16px;
     cursor: pointer;
 }
 .account__form-signin-with-social-media:hover{
