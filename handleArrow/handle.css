@@ -1,0 +1,8 @@
+.confirm__phone-number-form-body-square{
+    z-index: 10;
+    position: absolute;
+}
+.confirm__phone-number-form-body-slide{
+    z-index: 10;
+    position: relative;
+}

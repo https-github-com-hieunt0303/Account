@@ -247,7 +247,7 @@
     background-color: var(--primary-color);
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
-    cursor: pointer;
+    cursor: move;
 }
 .confirm__phone-number-form-body-icon{
     font-size: 1.2rem;
